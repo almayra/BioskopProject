@@ -1,0 +1,530 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "gatau",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "username": "aya",
+      "password": "aya",
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "username": "rere",
+      "password": "rere",
+      "role": "user"
+    },
+    {
+      "username": "pradana",
+      "password": "aya",
+      "role": "user",
+      "id": 4
+    }
+  ],
+  "studios": [
+    {
+      "id": 1,
+      "nama": "Studio 1",
+      "jumlahKursi": 260
+    },
+    {
+      "id": 2,
+      "nama": "Studio 2",
+      "jumlahKursi": 240
+    },
+    {
+      "id": 3,
+      "nama": "Studio 3",
+      "jumlahKursi": 200
+    }
+  ],
+  "movies": [
+    {
+      "title": "The Matrix",
+      "image": "https://i.pinimg.com/564x/6f/4f/ae/6f4fae0a140cae3dbf60795a6c930466.jpg",
+      "sinopsis": "Neo (Keanu Reeves) believes that Morpheus (Laurence Fishburne), an elusive figure considered to be the most dangerous man alive, can answer his question -- What is the Matrix? Neo is contacted by Trinity (Carrie-Anne Moss), a beautiful stranger who leads him into an underworld where he meets Morpheus. They fight a brutal battle for their lives against a cadre of viciously intelligent secret agents. It is a truth that could cost Neo something more precious than his life.",
+      "sutradara": "The Wachowskis",
+      "genre": "Sci-fi",
+      "durasi": "124",
+      "trailer": "https://www.youtube.com/embed/m8e-FF8MsqU",
+      "studioId": "1",
+      "jadwal": [
+        12,
+        16,
+        20
+      ],
+      "id": 1
+    },
+    {
+      "title": "Star Wars",
+      "image": "https://i.pinimg.com/564x/a4/91/9a/a4919a9227f9c23ede54b776c8f43800.jpg",
+      "sinopsis": "The Imperial Forces -- under orders from cruel Darth Vader (David Prowse) -- hold Princess Leia (Carrie Fisher) hostage, in their efforts to quell the rebellion against the Galactic Empire. Luke Skywalker (Mark Hamill) and Han Solo (Harrison Ford), captain of the Millennium Falcon, work together with the companionable droid duo R2-D2 (Kenny Baker) and C-3PO (Anthony Daniels) to rescue the beautiful princess, help the Rebel Alliance, and restore freedom and justice to the Galaxy.",
+      "sutradara": "J.J. Abrams",
+      "genre": "Sci-fi",
+      "durasi": "165",
+      "trailer": "https://www.youtube.com/embed/P94M4jlrytQ",
+      "studioId": "1",
+      "jadwal": [
+        16,
+        20,
+        22
+      ],
+      "id": 2
+    },
+    {
+      "title": "The Godfather",
+      "image": "https://i.pinimg.com/564x/89/94/67/899467a693d2d4aa3c06dacd5b36bece.jpg",
+      "sinopsis": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+      "sutradara": "Francis Ford Coppola",
+      "genre": "Crime",
+      "durasi": "175",
+      "trailer": "https://www.youtube.com/embed/sY1S34973zA",
+      "studioId": "1",
+      "jadwal": [
+        12,
+        18,
+        20
+      ],
+      "id": 3
+    },
+    {
+      "title": "Interstellar",
+      "image": "https://i.pinimg.com/564x/d9/6f/12/d96f125826da198356c1216f94b4eeca.jpg",
+      "sinopsis": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+      "sutradara": "Christopher Nolan",
+      "genre": "Sci-fi",
+      "durasi": "120",
+      "trailer": "https://www.youtube.com/embed/Lm8p5rlrSkY",
+      "studioId": "1",
+      "jadwal": [
+        16,
+        18
+      ],
+      "id": 4
+    },
+    {
+      "title": "Harry Potter",
+      "image": "https://i.pinimg.com/564x/46/f2/75/46f27584b186b308f49a575184e29531.jpg",
+      "sinopsis": "As Harry (Daniel Radcliffe), Ron (Rupert Grint), and Hermione (Emma Watson) race against time and evil to destroy the Horcruxes, they uncover the existence of the three most powerful objects in the wizarding world: the Deathly Hallows.",
+      "sutradara": "David Yates",
+      "genre": "Fantasy",
+      "durasi": "155",
+      "trailer": "https://www.youtube.com/embed/MxqsmsA8y5k",
+      "studioId": "1",
+      "jadwal": [
+        16,
+        18,
+        22
+      ],
+      "id": 5
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "userId": 2,
+      "movieId": 3,
+      "jadwal": 12,
+      "totalHarga": 50000,
+      "bayar": false
+    },
+    {
+      "userId": 2,
+      "movieId": 5,
+      "totalharga": 75000,
+      "jadwal": 16,
+      "bayar": false,
+      "id": 2
+    },
+    {
+      "userId": 3,
+      "movieId": 4,
+      "totalharga": 75000,
+      "jadwal": 12,
+      "bayar": false,
+      "id": 3
+    },
+    {
+      "userId": 4,
+      "movieId": 3,
+      "totalharga": 75000,
+      "jadwal": 12,
+      "bayar": false,
+      "id": 4
+    },
+    {
+      "userId": 2,
+      "movieId": 4,
+      "totalharga": 75000,
+      "jadwal": 12,
+      "bayar": false,
+      "id": 5
+    },
+    {
+      "userId": 2,
+      "movieId": 5,
+      "totalharga": 225000,
+      "jadwal": 16,
+      "bayar": false,
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "movieId": 1,
+      "totalharga": 75000,
+      "jadwal": 12,
+      "bayar": false,
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "movieId": 2,
+      "totalharga": 75000,
+      "jadwal": 12,
+      "bayar": false,
+      "id": 8
+    },
+    {
+      "userId": 2,
+      "movieId": 2,
+      "totalharga": 150000,
+      "jadwal": 12,
+      "bayar": false,
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "movieId": 2,
+      "totalharga": 75000,
+      "jadwal": 12,
+      "bayar": false,
+      "id": 10
+    },
+    {
+      "userId": 1,
+      "movieId": 1,
+      "totalharga": 75000,
+      "jadwal": 12,
+      "bayar": false,
+      "id": 11
+    },
+    {
+      "userId": 2,
+      "movieId": 2,
+      "totalharga": 150000,
+      "jadwal": 12,
+      "bayar": false,
+      "id": 12
+    },
+    {
+      "userId": 3,
+      "movieId": 3,
+      "totalharga": 300000,
+      "jadwal": 20,
+      "bayar": false,
+      "id": 13
+    },
+    {
+      "userId": 4,
+      "movieId": 4,
+      "totalharga": 450000,
+      "jadwal": 18,
+      "bayar": false,
+      "id": 14
+    },
+    {
+      "userId": 4,
+      "movieId": 1,
+      "totalharga": 150000,
+      "jadwal": 16,
+      "bayar": false,
+      "id": 15
+    },
+    {
+      "userId": 4,
+      "movieId": 2,
+      "totalharga": 225000,
+      "jadwal": 12,
+      "bayar": false,
+      "id": 16
+    },
+    {
+      "userId": 3,
+      "movieId": 1,
+      "totalharga": 150000,
+      "jadwal": 20,
+      "bayar": false,
+      "id": 17
+    },
+    {
+      "userId": 3,
+      "movieId": 2,
+      "totalharga": 150000,
+      "jadwal": 22,
+      "bayar": false,
+      "id": 18
+    },
+    {
+      "userId": 3,
+      "movieId": 3,
+      "totalharga": 75000,
+      "jadwal": 18,
+      "bayar": false,
+      "id": 19
+    },
+    {
+      "userId": 2,
+      "movieId": 1,
+      "totalharga": 150000,
+      "jadwal": 16,
+      "bayar": false,
+      "id": 20
+    }
+  ],
+  "ordersDetails": [
+    {
+      "id": 1,
+      "orderId": 1,
+      "row": 2,
+      "seat": 4
+    },
+    {
+      "id": 2,
+      "orderId": 1,
+      "row": 2,
+      "seat": 5
+    },
+    {
+      "id": 3,
+      "orderId": 2,
+      "row": 2,
+      "seat": 6
+    },
+    {
+      "orderId": 3,
+      "seat": 9,
+      "row": 2,
+      "id": 4
+    },
+    {
+      "orderId": 4,
+      "seat": 6,
+      "row": 2,
+      "id": 5
+    },
+    {
+      "orderId": 5,
+      "seat": 10,
+      "row": 2,
+      "id": 6
+    },
+    {
+      "orderId": 6,
+      "seat": 7,
+      "row": 2,
+      "id": 7
+    },
+    {
+      "orderId": 6,
+      "seat": 8,
+      "row": 2,
+      "id": 8
+    },
+    {
+      "orderId": 6,
+      "seat": 9,
+      "row": 2,
+      "id": 9
+    },
+    {
+      "orderId": 7,
+      "seat": 7,
+      "row": 2,
+      "id": 10
+    },
+    {
+      "orderId": 8,
+      "seat": 8,
+      "row": 4,
+      "id": 11
+    },
+    {
+      "orderId": 9,
+      "seat": 7,
+      "row": 4,
+      "id": 12
+    },
+    {
+      "orderId": 9,
+      "seat": 9,
+      "row": 4,
+      "id": 13
+    },
+    {
+      "orderId": 10,
+      "seat": 9,
+      "row": 3,
+      "id": 14
+    },
+    {
+      "orderId": 11,
+      "seat": 3,
+      "row": 2,
+      "id": 15
+    },
+    {
+      "orderId": 12,
+      "seat": 11,
+      "row": 3,
+      "id": 16
+    },
+    {
+      "orderId": 12,
+      "seat": 12,
+      "row": 3,
+      "id": 17
+    },
+    {
+      "orderId": 13,
+      "seat": 7,
+      "row": 2,
+      "id": 18
+    },
+    {
+      "orderId": 13,
+      "seat": 8,
+      "row": 2,
+      "id": 19
+    },
+    {
+      "orderId": 13,
+      "seat": 9,
+      "row": 2,
+      "id": 20
+    },
+    {
+      "orderId": 13,
+      "seat": 10,
+      "row": 2,
+      "id": 21
+    },
+    {
+      "orderId": 14,
+      "seat": 7,
+      "row": 6,
+      "id": 22
+    },
+    {
+      "orderId": 14,
+      "seat": 9,
+      "row": 6,
+      "id": 23
+    },
+    {
+      "orderId": 14,
+      "seat": 10,
+      "row": 6,
+      "id": 24
+    },
+    {
+      "orderId": 14,
+      "seat": 8,
+      "row": 6,
+      "id": 25
+    },
+    {
+      "orderId": 14,
+      "seat": 11,
+      "row": 6,
+      "id": 26
+    },
+    {
+      "orderId": 14,
+      "seat": 12,
+      "row": 6,
+      "id": 27
+    },
+    {
+      "orderId": 15,
+      "seat": 7,
+      "row": 4,
+      "id": 28
+    },
+    {
+      "orderId": 15,
+      "seat": 8,
+      "row": 4,
+      "id": 29
+    },
+    {
+      "orderId": 16,
+      "seat": 1,
+      "row": 2,
+      "id": 30
+    },
+    {
+      "orderId": 16,
+      "seat": 2,
+      "row": 2,
+      "id": 31
+    },
+    {
+      "orderId": 16,
+      "seat": 3,
+      "row": 2,
+      "id": 32
+    },
+    {
+      "orderId": 17,
+      "seat": 9,
+      "row": 7,
+      "id": 33
+    },
+    {
+      "orderId": 17,
+      "seat": 10,
+      "row": 7,
+      "id": 34
+    },
+    {
+      "orderId": 18,
+      "seat": 11,
+      "row": 3,
+      "id": 35
+    },
+    {
+      "orderId": 18,
+      "seat": 12,
+      "row": 3,
+      "id": 36
+    },
+    {
+      "orderId": 19,
+      "seat": 9,
+      "row": 1,
+      "id": 37
+    },
+    {
+      "orderId": 20,
+      "seat": 10,
+      "row": 2,
+      "id": 38
+    },
+    {
+      "orderId": 20,
+      "seat": 11,
+      "row": 2,
+      "id": 39
+    }
+  ],
+  "transactions": [
+    {}
+  ],
+  "transactionsDetails": [
+    {}
+  ]
+}
